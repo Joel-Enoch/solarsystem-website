@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Exploration</title>
+    <link rel="icon" href="images/astronomy-icon.png" type="image/png">
+
+    <style>
+        /* CSS remains the same as before */
+        .faq-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ADD8E6;
+            border-radius: 10px;
+        }
+
+        .faq-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .faq {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            background-color: #0437F2;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            display: none;
+            background-color: #87CEEB;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="media/white-dwarf-261405.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Banner -->
+    <header>
+        <h1>Welcome to Astronomy Exploration</h1>
+        <p>Discover the wonders of the universe</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Astronomy</a>
+        <a href="#solar-system">Solar System</a>
+        <a href="#video">Videos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#comments">Comments</a>
+        <a href="external/hubble-site.html">Hubble Site</a>
+    </nav>
+
+    <!-- Content Sections -->
+    <div class="content" id="about">
+        <h2>About Astronomy</h2>
+        <p>Astronomy is the study of celestial objects, space, and the universe as a whole...</p>
+    </div>
+
+    <div class="content" id="solar-system">
+        <h2>The Solar System</h2>
+        <ul>
+            <li><strong>Mercury</strong> - Mercury is the first planet from the Sun and the smallest in the Solar System</li>
+            <li><strong>Venus</strong> - Venus is the second planet from the Sun. It is a terrestrial planet and is the closest in mass and size to its orbital neighbour Earth, and known as Earth 'sister' planet.</li>
+            <li><strong>Earth</strong> - Earth is the third planet from the Sun and the only astronomical object known to harbor life.</li>
+            <li><strong>Mars</strong> - Mars is the fourth planet from the Sun.</li>
+            <li><strong>Jupiter</strong> - Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than 2.5 times that of all the other planets in the Solar System combined and slightly less than one-thousandth the mass of the Sun.</li>
+            <li><strong>Saturn</strong> - Saturn is the sixth planet from the Sun, and the second largest in the solar system. It's surrounded by beautiful rings.</li>
+            <li><strong>Uranus</strong> - Uranus is one of two ice giants in the outer solar system.</li>                               
+            <li><strong>Neptune</strong> - Neptune is the eighth and most distant planet from the Sun. It's the fourth largest, and the first planet discovered with math.</li>
+        </ul>
+    </div>
+
+    <div class="content" id="home">
+        <h2>Featured Astronomy Article</h2>
+        <iframe src="content/https://en.wikipedia.org/wiki/Astronomy.html"></iframe>
+    </div>
+
+    <div class="video-container" id="video">
+        <h2>Watch Astronomy in Action</h2>
+        <video controls>
+            <source src="https://www.youtube.com/watch?v=egDIqKLt2L4?playlist=v=egDIqKLt2L4&loop=1&contols=1&autoplay=1">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="content faq-section" id="faq">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                What is astronomy? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                Astronomy is the scientific study of celestial objects like stars, planets, comets, and galaxies, as well as phenomena that occur outside Earth's atmosphere.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                How far is the nearest star? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                The nearest star to Earth is the Sun, which is approximately 93 million miles (150 million kilometers) away. The next closest star system is Alpha Centauri, about 4.37 light-years away.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                Can humans live on Mars? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                Currently, humans cannot live on Mars without significant life support systems. However, scientists are exploring possibilities for future colonization, focusing on technology to create habitable environments.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                What is a black hole? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                A black hole is a region of space where gravity is so strong that nothing, not even light, can escape. Black holes form from the remnants of massive stars after they collapse under their own gravity.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                Why isn’t Pluto a planet anymore? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                In 2006, the International Astronomical Union (IAU) redefined the criteria for a planet. Pluto didn’t meet the third criterion of "clearing its orbit" and was reclassified as a dwarf planet.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                Why Venus is the hottest planet in our Solar System? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                Venus has a thick layer mixture of Carbon dioxide ( CO<sub>2</sub> ), Carbon Monoxide ( CO ), Nitrogen( N<sub>2</sub> ), Water vapour ( H<sub>2</sub>O ) and Sulfur dioxide ( SO<sub>2</sub> ). These components make Venus unhabitable of its corrosive environment, extreme heat reaching 465 degree celcuis.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                How long can the Sun still provide light and energy to the Earth? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                By using fundamental Mathematical Calculation, Sun has been burning 4.6 bilion years of hydrogen and it can still continue 5 bilion years before it turns to other stage of nuclear fusion.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                How does the Sun provide all the nned to support the live on Earth? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                By Nuclear Fusion to release light and energy.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                What happens if the Sun reaches it's end of its life? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Turn into a white dwarf, but it undergo nuclear fusion one last time before turning into a white dwarf</p> <p>1, <mark>Hydrogen Fusion or <b>Proton-Proton Chain Reaction</b></mark>, it occurs when the Sun's core temperature ranges from 10 to 15 million K. First step, Two protons ( <sup>1</sup>H ) collide, one of them undergoes beta decay, and the pair form deuterium ( <sup>2</sup>H ) related as a nucleus with one proton and one neutron. This reaction release a positron ( e<sup>+</sup> ) and a neutrino ( V<sub>e</sub> )</p> <p>( <b><mark><sup>1</sup>H + <sup>1</sup> → <sup>2</sup>H + e<sup>+</sup> + V<sub>e</sub></mark></b> )</p> <p>Second step, <sup>2</sup>H fuses with <sup>1</sup>H to form Helium-3 ( <sup>3</sup>He ) and emits a gamma photon ( γ )</p> <p>( <b><mark><sup>2</sup>H + <sup>1</sup>H → <sup>3</sup>He +  γ </mark></b> )</p> <p>Third step, Two helium-3 nuclei collide and fuse to form helium-4 ( <sup>4</sup>He ) and two protons are ejected</p>. <p>( <b><mark><sup>3</sup>He + <sup>3</sup>He → <sup>4</sup>He + 2<sup>1</sup>H</mark></b> )</p> <p>2, <mark>Helium fusion <b>( Red Giant Phase )</b></mark>, after exhausting its hydrogen fuel core, the core contracts, becoming denser and hotter, reaching to 100 million K, hot enough to ignite helium fusion.</p><p><b><mark>Fusion Process : Triple-Alpha Process</mark></b></p>. <p>First step, 2<sup>4</sup>He nuclei fuse to form an unstable beryllium-8 nucleus.</p> 
+<p>( <b><mark><sup>4</sup>He + <sup>4</sup>He → <sup>8</sup>Be</mark></b> )</p> <p>Second step, <sup>8</sup>Be nucleus fuses with another <sup>4</sup>He nucleus to form carbon-12 ( <sup>12</sup>C )</p> <p>( <b><mark><sup>8</sup>Be + <sup>4</sup>He → <sup>12</sup>C + γ </mark></b> )</p> <p>Secondary fusion, if the core temperature increase even further, it may trigger fusion of carbon to form oxygen, but it usually occurs in the most massive stars that can achieve temperatures above 600 million K.</p> <p>( <b><mark><sup>4</sup>He + <sup>12</sup>C → <sup>16</sup>O + γ </mark></b> )</p> <p>3, <mark>Carbon Fusion <b>( Advanced Stellar Phases )</b></mark>, once helium is exhausted the core contracts further and begin to fuse carbon into heavier elements. At temperatures around 600 million K, carbon nuclei ( <sup>12</sup>C ) begin to fuse.</p> <p><mark><b>Fusion Process : Carbon Fusion</b></mark></p> <p>This fusion requires above 600 million K.</p> <p>First step, two carbon-12 nuclei collide and fuse to form neon-20 ( <sup>20</sup>Ne ) and helium-4 ( <sup>4</sup>He )</p> <p> ( <b><mark><sup>12</sup>C + <sup>12</sup>C → <sup>20</sup>Ne + <sup>4</sup>He</mark></b> )</p> <p>Second step, helium and carbon can further fuse to form oxygen and neon</p> <p> ( <b><mark><sup>12</sup>C + <sup>4</sup>He → <sup>16</sup>O + γ</mark></b> )</p> <p><b> These fusion eventually fuse into iron which cant be fused, though until this stage of fusion is more enough, it isn't the end of the nuclear fusion, for very massive star that reaches over 2 solar masses will undergo Neon, Oxygen and Silicon Fusion.</b></p>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="content comment-section" id="comments">
+        <h2>Share Your Thoughts</h2>
+        <textarea id="comment-box" placeholder="Leave a comment..."></textarea>
+        <br>
+        <button onclick="submitComment()">Post Comment</button>
+        <div class="comments-display" id="comment-list"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <!-- JavaScript -->
+    <script>
+        // FAQ toggle functionality
+        function toggleFaq(faq) {
+            const answer = faq.nextElementSibling;
+            const sign = faq.querySelector('span');
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                sign.textContent = '+';
+            } else {
+                answer.style.display = 'block';
+                sign.textContent = '−';
+            }
+        }
+
+        // Back to Top Button functionality remains the same
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Comment Section functionality remains the same
+        function submitComment() {
+            const commentBox = document.getElementById('comment-box');
+            const commentList = document.getElementById('comment-list');
+            const commentText = commentBox.value.trim();
+
+            if (commentText) {
+                const comment = document.createElement('p');
+                comment.textContent = commentText;
+                commentList.appendChild(comment);
+                commentBox.value = '';
+            } else {
+                alert('Please enter a comment before posting!');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
